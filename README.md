@@ -22,7 +22,10 @@ var elements=document.getElementsByTagName('li');
         elements[i].onclick= handler(i);
  }
  
-4、
+4、使用object.defineProperty可向对象添加或者修改属性，
+通过hasOwnProperty可判断一个对象以及其原型链上是否具有指定名称的属性，
+每个对象都有prototype属性，返回对象类型原型的引用，
+在原型上扩展的可枚举方法，会被for in循环出来。
 
 5、H5新增标签：
 article: 标签定义外部的内容。
