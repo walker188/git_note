@@ -3,7 +3,14 @@
 1、'hello'+9*2+9='hello189'
 string+number=string
 
-2、作用域问题
+2、splice用于删除、插入、替换元素
+arrayObject.splice(index,howmany,ele1,ele2......eleX);
+index:必须，为开始删除元素的索引值。
+howmany：删除数组中元素的数量，必须是数字，可以为0。
+ele1:规定要添加到数组中的元素。
+eleX:向数组中添加的若干元素。
+
+3、作用域问题
 var elements=document.getElementsByTagName('li');
     var length=elements.length;
     var handler = function(i){
@@ -15,8 +22,7 @@ var elements=document.getElementsByTagName('li');
         elements[i].onclick= handler(i);
  }
  
- 3、
-
+4、
 
 5、H5新增标签：
 article: 标签定义外部的内容。
