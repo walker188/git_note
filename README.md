@@ -2,7 +2,20 @@
 成长笔记
 1、'hello'+9*2+9='hello189'
 string+number=string
-2、
+
+2、作用域问题
+var elements=document.getElementsByTagName('li');
+    var length=elements.length;
+    var handler = function(i){
+        return fucntion(){
+            alert(i);
+        }
+    }
+    for(var i=0;i<length;i++){
+        elements[i].onclick= handler(i);
+ }
+ 
+ 3、
 
 
 5、H5新增标签：
