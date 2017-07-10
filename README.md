@@ -55,3 +55,32 @@ source:audio和video的属性之一。为audio和video定义媒介源。
 summary:为details定义标题。
 time:定义日期或时间。
 video：h5新增视频标签。具有高宽属性。
+
+6、利用:after或:before伪元素进行水平是、垂直居中
+eg：<div class="mask">
+        <div class="dialog">
+               未知宽高元素窗口水平垂直居中(拖动右下角改变宽高)"
+        </div>
+    </div>
+    .mask{
+    position: fixed;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    text-align: center;//子元素设置inline-block使样式生效             
+    background-color: rgba(200, 200, 200, .2);
+  
+}
+.mask:after{
+    content: "";
+    display: inline-block;//必须,具有inline属性
+    vertical-align: middle;//对其方式生效
+    height: 100%;
+}
+.dialog{
+    display: inline-block;//具有inline属性
+    border: 3px solid lightblue;
+}
+
+7、
