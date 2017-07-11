@@ -87,3 +87,19 @@ eg：<div class="mask">
 normal	只在允许的断字点换行（浏览器保持默认处理）。
 break-word	在长单词或 URL 地址内部进行换行。
 white-space:nowrap;//长文本不换行,直到遇到<br>为止，inherit：从父级元素继承white-space 属性的值。
+
+8、li超过一定长度，以省略号显示
+.nowrap li{ 
+   white-space:nowrap; 
+   width:100px; 
+   overflow:hidden; 
+   text-overflow: ellipsis; 
+} 
+
+9、侧边栏宽度固定，内容区宽度自适应问题
+http://jo2.org/css-auto-adapt-width/
+
+10、call、apply总结
+http://uule.iteye.com/blog/1158829
+
+
