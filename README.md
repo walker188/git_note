@@ -83,4 +83,7 @@ eg：<div class="mask">
     border: 3px solid lightblue;
 }
 
-7、
+7、word-wrap: normal|break-word;
+normal	只在允许的断字点换行（浏览器保持默认处理）。
+break-word	在长单词或 URL 地址内部进行换行。
+white-space:nowrap;//长文本不换行,直到遇到<br>为止，inherit：从父级元素继承white-space 属性的值。
