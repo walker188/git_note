@@ -133,7 +133,7 @@ socket.onopen = function(event) {
   //socket.close() 
 };
 
-13、avascript:判断是否是数字
+13、javascript:判断是否是数字
 function isNum (n) {
     return ('number' === typeof n) ? true : 
     'object' === typeof n ? n*1 == n : 
