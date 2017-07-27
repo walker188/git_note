@@ -198,3 +198,35 @@ function isEmpty( o ) {
 3.判断空字符串
 这个其实很简单，只是你要明白一点：你想要的空字符串，是指没有任何内容的字符串，还是即使有个空格也算是空字符串？所以你最好对字符串进行去除首尾空格的操作，然后再判断他是不是没有任何内容。
 而’null’,’0’等这些字符串，基本上已经和空字符串毫无关系了，你不应该认为他们表示false。
+
+15、自适应三栏布局
+// 样式代码
+<style>
+    .div1{
+    width:50px;
+    height:500px;
+    background:yellow;
+    float:left;
+}
+.div2{
+    width:50px;
+    height:500px;
+    background:red;
+    float:right;
+}
+.fix{
+    overflow:hidden;
+    *zoom:1;
+    background:green;
+    height:500px;
+}
+</style>
+// html代码
+<div>
+  <div class="div1">1</div>
+  <div class="div2">2</div>
+  <div class="fix">3</div>
+</div>
+
+
+
